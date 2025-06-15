@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background: #f5f8fd;
+}
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 220px;
+    background: #fff;
+    color: #1abc9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    border-right: 1.5px solid #e0e0e0;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+    color: #1abc9c;
+}
+.nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.nav-menu a {
+    color: #1abc9c;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 6px 0 0 6px;
+    font-size: 1.08rem;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-menu a.active, .nav-menu a:hover {
+    background: #e6f7f3;
+    color: #16a085;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f5f8fd;
+}
+.topbar {
+    height: 64px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 18px;
+}
+.page-title {
+    color: #1abc9c;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.user-info .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+}
+.user-info .user-name {
+    color: #16a085;
+    font-size: 1rem;
+}
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    padding: 18px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 16px;
+}
+.filter-input {
+    padding: 8px 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f8fefd;
+    color: #16a085;
+    outline: none;
+}
+.btn {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-sm {
+    padding: 4px 12px;
+    font-size: 0.95rem;
+    margin-right: 2px;
+}
+.btn-green {
+    background: #1abc9c;
+    color: #fff;
+}
+.btn-green:hover {
+    background: #16a085;
+}
+.btn-blue {
+    background: #3b82f6;
+    color: #fff;
+}
+.btn-blue:hover {
+    background: #2563eb;
+}
+.btn-red {
+    background: #ef4444;
+    color: #fff;
+}
+.btn-red:hover {
+    background: #b91c1c;
+}
+.btn-orange {
+    background: #f59e42;
+    color: #fff;
+}
+.btn-orange:hover {
+    background: #d97706;
+}
+.btn-gray {
+    background: #e5e7eb;
+    color: #333;
+}
+.btn-gray:hover {
+    background: #d1d5db;
+}
+.action-bar {
+    background: #fff;
+    padding: 12px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.table-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 18px 0 0 0;
+}
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #333;
+}
+.students-table th, .students-table td {
+    padding: 12px 8px;
+    border-bottom: 1.5px solid #f0f0f0;
+    text-align: center;
+}
+.students-table th {
+    background: #f5f8fd;
+    color: #1abc9c;
+    font-weight: bold;
+}
+.students-table tr:last-child td {
+    border-bottom: none;
+}
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.status.on {
+    background: #e6f7f3;
+    color: #1abc9c;
+}
+.status.off {
+    background: #f3f4f6;
+    color: #aaa;
+}
+@media (max-width: 900px) {
+    .sidebar {
+        width: 60px;
+        padding-top: 10px;
+    }
+    .logo {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    .nav-menu a {
+        font-size: 0.95rem;
+        padding: 10px 10px;
+    }
+    .main-content {
+        padding: 0;
+    }
+    .filter-bar, .action-bar {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 8px;
+    }
+    .students-table th, .students-table td {
+        padding: 8px 2px;
+    }
+} 

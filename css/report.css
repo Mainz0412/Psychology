@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0e7ff 60%, #e6f7f3 100%);
+}
+.report-container {
+    max-width: 900px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 32px rgba(80,120,255,0.10);
+    overflow: hidden;
+}
+.report-header {
+    background: linear-gradient(90deg, #6ec6ff 0%, #a685ff 100%);
+    color: #fff;
+    padding: 32px 32px 18px 32px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+}
+.report-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.report-meta {
+    margin-top: 10px;
+    font-size: 1.08rem;
+    color: #e0e7ff;
+    display: flex;
+    gap: 32px;
+}
+.ai-greeting {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: #e6f7f3;
+    border-radius: 18px;
+    margin: 24px 32px 0 32px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 12px rgba(80,120,255,0.06);
+}
+.ai-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: url('https://img.icons8.com/color/96/000000/robot-2.png') no-repeat center/cover, #fff;
+    border: 3px solid #a685ff;
+}
+.ai-greeting-text {
+    flex: 1;
+    color: #4b4b4b;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+.ai-tip {
+    margin-top: 8px;
+    color: #a685ff;
+    font-size: 0.98rem;
+    background: #f5f8fd;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: inline-block;
+}
+.report-tabs {
+    display: flex;
+    gap: 18px;
+    margin: 24px 32px 0 32px;
+    border-bottom: 2px solid #e0e0e0;
+}
+.tab {
+    padding: 10px 28px;
+    font-size: 1.08rem;
+    color: #888;
+    background: #f5f8fd;
+    border-radius: 18px 18px 0 0;
+    cursor: pointer;
+    margin-bottom: -2px;
+    transition: background 0.2s, color 0.2s;
+}
+.tab.active {
+    background: #fff;
+    color: #6ec6ff;
+    font-weight: bold;
+    border-bottom: 2.5px solid #6ec6ff;
+}
+.report-section {
+    margin: 32px 32px 0 32px;
+    background: #f5f8fd;
+    border-radius: 18px;
+    padding: 24px 24px 18px 24px;
+    box-shadow: 0 2px 12px rgba(80,120,255,0.06);
+}
+.section-title {
+    font-size: 1.15rem;
+    color: #6ec6ff;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.wordcloud {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+    align-items: flex-end;
+}
+.word {
+    font-weight: bold;
+    opacity: 0.85;
+}
+.word-green { color: #1abc9c; font-size: 1.1em; }
+.word-red { color: #ff5e5e; font-size: 1.3em; }
+.word-blue { color: #6ec6ff; font-size: 1.2em; }
+.word-yellow { color: #f6c244; font-size: 1.1em; }
+.emotion-bars {
+    margin-bottom: 12px;
+}
+.bar-label {
+    color: #888;
+    font-size: 1.05rem;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.bar-bg {
+    width: 100%;
+    height: 22px;
+    background: #e0e7ff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+.bar-fill {
+    height: 100%;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.02rem;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+.bar-anxious { background: linear-gradient(90deg, #6ec6ff 60%, #a685ff 100%); }
+.bar-depress { background: linear-gradient(90deg, #1abc9c 60%, #6ec6ff 100%); }
+.bar-happy { background: linear-gradient(90deg, #f6c244 60%, #ffb347 100%); color: #fff; }
+.emotion-desc {
+    color: #6ec6ff;
+    font-size: 1.05rem;
+    margin-top: 10px;
+    background: #e6f7f3;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
+.focus-dimensions {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+}
+.focus-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(80,120,255,0.06);
+    padding: 18px 16px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.focus-title {
+    color: #6ec6ff;
+    font-size: 1.08rem;
+    font-weight: bold;
+}
+.focus-score {
+    color: #a685ff;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.focus-desc {
+    color: #4b4b4b;
+    font-size: 1.02rem;
+}
+@media (max-width: 900px) {
+    .report-container {
+        margin: 8px;
+    }
+    .report-header, .ai-greeting, .report-section {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .focus-dimensions {
+        flex-direction: column;
+        gap: 12px;
+    }
+} 

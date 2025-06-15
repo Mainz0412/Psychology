@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生档案管理</title>
+    <link rel="stylesheet" href="css/students.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">心理云平台</div>
+            <nav class="nav-menu">
+                <a href="#">首页</a>
+                <a href="#" class="active">学生信息管理</a>
+                <a href="#">班级信息</a>
+                <a href="#">系统管理</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <span class="page-title">学生档案管理</span>
+                <div class="user-info">
+                    <img src="https://img.icons8.com/color/48/000000/user-male-circle--v2.png" class="avatar" alt="avatar">
+                    <span class="user-name">管理员</span>
+                </div>
+            </header>
+            <section class="filter-bar">
+                <input type="text" placeholder="姓名" class="filter-input">
+                <input type="text" placeholder="学号" class="filter-input">
+                <select class="filter-input"><option>学校</option><option>一中</option><option>二中</option></select>
+                <select class="filter-input"><option>班级</option><option>高一1班</option><option>高一2班</option></select>
+                <select class="filter-input"><option>年级</option><option>高一</option><option>高二</option></select>
+                <select class="filter-input"><option>状态</option><option>在读</option><option>毕业</option></select>
+                <button class="btn btn-green">搜索</button>
+                <button class="btn btn-gray">重置</button>
+            </section>
+            <section class="action-bar">
+                <button class="btn btn-green">新增</button>
+                <button class="btn btn-blue">修改</button>
+                <button class="btn btn-red">删除</button>
+                <button class="btn btn-green">导入</button>
+                <button class="btn btn-orange">导出</button>
+            </section>
+            <section class="table-section">
+                <table class="students-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>登录账号</th>
+                            <th>姓名</th>
+                            <th>学号</th>
+                            <th>班级</th>
+                            <th>年级</th>
+                            <th>性别</th>
+                            <th>状态</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>wangxiaoming</td>
+                            <td>王小明</td>
+                            <td>20230001</td>
+                            <td>高一1班</td>
+                            <td>高一</td>
+                            <td>男</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>lihong</td>
+                            <td>李红</td>
+                            <td>20230002</td>
+                            <td>高一2班</td>
+                            <td>高一</td>
+                            <td>女</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>zhanggang</td>
+                            <td>张刚</td>
+                            <td>20230003</td>
+                            <td>高二1班</td>
+                            <td>高二</td>
+                            <td>男</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>chenjing</td>
+                            <td>陈静</td>
+                            <td>20230004</td>
+                            <td>高二2班</td>
+                            <td>高二</td>
+                            <td>女</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>liuyang</td>
+                            <td>刘洋</td>
+                            <td>20230005</td>
+                            <td>高一1班</td>
+                            <td>高一</td>
+                            <td>男</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>sunlei</td>
+                            <td>孙磊</td>
+                            <td>20230006</td>
+                            <td>高一2班</td>
+                            <td>高一</td>
+                            <td>男</td>
+                            <td><span class="status off">毕业</span></td>
+                            <td>已毕业</td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>zhaomin</td>
+                            <td>赵敏</td>
+                            <td>20230007</td>
+                            <td>高二1班</td>
+                            <td>高二</td>
+                            <td>女</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>qinzhi</td>
+                            <td>秦智</td>
+                            <td>20230008</td>
+                            <td>高二2班</td>
+                            <td>高二</td>
+                            <td>男</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>huangxin</td>
+                            <td>黄欣</td>
+                            <td>20230009</td>
+                            <td>高三1班</td>
+                            <td>高三</td>
+                            <td>女</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>gulei</td>
+                            <td>顾雷</td>
+                            <td>20230010</td>
+                            <td>高三2班</td>
+                            <td>高三</td>
+                            <td>男</td>
+                            <td><span class="status on">在读</span></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-blue btn-sm">编辑</button>
+                                <button class="btn btn-red btn-sm">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html> 
